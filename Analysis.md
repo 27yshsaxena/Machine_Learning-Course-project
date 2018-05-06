@@ -1,4 +1,4 @@
-                Title                           |          Author             |       Date
+                ### Title                           |          ### Author             |       ### Date     |
 Practical machine learning: Qualitative recognition of weight lifting exercise | Yash Saxena | 04-May-2018    
 
 ## Background
@@ -89,7 +89,7 @@ plot(TrainTrainingSet$classe, col="yellow", main="Plot of levels of variable cla
 
 Based on the above graph Level A is most frequent while level D is less frequent.
 
-# Model1:- Random Forest
+### Model1:- Random Forest
 ```
 model1 <- randomForest(classe ~. , data=TrainTrainingSet, method="class")
 
@@ -100,7 +100,7 @@ prediction1 <- predict(model1, TestTrainingSet, type = "class")
 confusionMatrix(prediction2, TestTrainingSet$classe)
 ```
 
-# Model2:- Decision tree
+### Model2:- Decision tree
 
 ```
 model2 <- rpart(classe ~ ., data=TrainTrainingSet, method="class")
