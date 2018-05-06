@@ -1,5 +1,4 @@
                  Title                           |           Author             |        Date     |
-| ---                                            | ---                          | ----            |                 
 | :Practical machine learning: Qualitative recognition of weight lifting exercise | :Yash Saxena: | :04-May-2018: |    
 
 ## Background
