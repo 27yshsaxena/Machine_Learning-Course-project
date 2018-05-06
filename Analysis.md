@@ -1,7 +1,7 @@
 ---
 title: "Machine Learning Coursera Project"
-author: 'Yash Saxena, Github: julbert'
-date: "26 November 2016"
+author: 'Yash Saxena'
+date: "04-May-2018"
 output: word_document
 ---
 
