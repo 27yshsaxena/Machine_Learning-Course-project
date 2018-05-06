@@ -1,7 +1,6 @@
                 Title                           |          Author             |       Date
-------------------------------------------------|-----------------------------|------------------------
-Practical machine learning: Qualitative         |        Yash Saxena          |      04-May-2018
-recognition of weight lifting exercise          |                             |
+----------------------------------------------- | --------------------------- | -----------------------
+Practical machine learning: Qualitative recognition of weight lifting exercise | Yash Saxena | 04-May-2018    
 
 #Background
 Using devices such as Jawbone Up, Nike FuelBand, and Fitbit it is now possible to collect a large amount of data about personal activity 
