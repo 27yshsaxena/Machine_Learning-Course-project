@@ -105,7 +105,7 @@ model1 <- randomForest(classe ~. , data=TrainTrainingSet, method="class")
 prediction1 <- predict(model1, TestTrainingSet, type = "class")
 
 #Test result
-confusionMatrix(prediction2, TestTrainingSet$classe)
+confusionMatrix(prediction1, TestTrainingSet$classe)
 ```
 
 ### Model2:- Decision tree
