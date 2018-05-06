@@ -1,13 +1,13 @@
-|             |          Grouping           ||
-First Header  | Second Header | Third Header |
- ------------ | :-----------: | -----------: |
-Content       |          *Long Cell*        ||
-Content       |   **Cell**    |         Cell |
+---
+title: "Machine Learning Coursera Project"
+author: 'Yash Saxena, Github: julbert'
+date: "26 November 2016"
+output: word_document
+---
 
-New section   |     More      |         Data |
-And more      | With an escaped '\|'         ||  
-[Prototype table]
-
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
 
 ## Background
 Using devices such as Jawbone Up, Nike FuelBand, and Fitbit it is now possible to collect a large amount of data about personal activity 
