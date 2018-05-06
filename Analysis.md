@@ -113,7 +113,7 @@ confusionMatrix(prediction2, TestTrainingSet$classe)
 ```
 model2 <- rpart(classe ~ ., data=TrainTrainingSet, method="class")
 
-prediction2 <- predict(model1, TestTrainingSet, type = "class")
+prediction2 <- predict(model2, TestTrainingSet, type = "class")
 
 # Plot the Decision Tree
 rpart.plot(model2, main="Classification Tree", extra=102, under=TRUE, faclen=0)
