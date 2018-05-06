@@ -97,28 +97,28 @@ plot(TrainTrainingSet$classe, col="red", main="Plot of levels of variable classe
 
 Based on the above graph Level A is most frequent while level D is less frequent.
 
-### Model1:- Random Forest
+### Model1:- Decision Tree
 ```
-model1 <- randomForest(classe ~. , data=TrainTrainingSet, method="class")
+model1 <- rpart(classe ~ ., data=TrainTrainingSet, method="class")
 
-# Predicting:
 prediction1 <- predict(model1, TestTrainingSet, type = "class")
 
-#Test result
+# Plot the Decision Tree
+rpart.plot(model1, main="Classification Tree", extra=102, under=TRUE, faclen=0)
+# Test results on our TestTrainingSet data set:
 confusionMatrix(prediction1, TestTrainingSet$classe)
 ```
 
-### Model2:- Decision tree
+### Model2:- Random Forest
 
 ```
-model2 <- rpart(classe ~ ., data=TrainTrainingSet, method="class")
+model2 <- randomForest(classe ~. , data=TrainTrainingSet, method="class")
 
+# Predicting:
 prediction2 <- predict(model2, TestTrainingSet, type = "class")
 
-# Plot the Decision Tree
-rpart.plot(model2, main="Classification Tree", extra=102, under=TRUE, faclen=0)
-# Test results
-confusionMatrix(prediction1, TestTrainingSet$classe)
+# Test results on TestTrainingSet data set:
+confusionMatrix(prediction2, TestTrainingSet$classe)
 ```
 ## Result
 Random Forest algorithm performed better than Decision Trees. Accuracy for Random Forest model was 0.995 (95% CI: (0.993, 0.997)) 
@@ -131,6 +131,6 @@ Here is the final outcome based on the Prediction Model 2 (Random Forest) applie
 
 ```
 # predict outcome levels on the original Testing data set using Random Forest algorithm
-predictfinal <- predict(model1, testingset, type="class")
+predictfinal <- predict(model2, testingset, type="class")
 predictfinal
 ```
