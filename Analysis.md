@@ -92,7 +92,7 @@ TestTrainingSet <- trainingset[-traintrainset, ]
 
 # The variable "classe" contains 5 levels: A, B, C, D and E. A plot of the outcome variable will allow us to see the frequency of each levels in the TrainTrainingSet data set and # compare one another.
 
-plot(TrainTrainingSet$classe, col="yellow", main="Plot of levels of variable classe within the TrainTrainingSet data set", xlab="classe", ylab="Frequency")
+plot(TrainTrainingSet$classe, col="red", main="Plot of levels of variable classe within the TrainTrainingSet data set", xlab="classe", ylab="Frequency")
 ```
 
 Based on the above graph Level A is most frequent while level D is less frequent.
