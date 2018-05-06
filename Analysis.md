@@ -1,25 +1,23 @@
- __________________________________________________________________________________________________________________________
-|                           #Title                                      |       Author              |          Date        |
-|                                                                       |                           |                      |
-|     Practical machine learning: Qualitative recognition               |     Yash Saxena           |       06-05-2018     |
-|      of weight lifting exercise                                       |                           |                      |
-|_______________________________________________________________________|___________________________|______________________|
+                Title                           |          Author             |       Date
+------------------------------------------------|-----------------------------|------------------------
+Practical machine learning: Qualitative         |        Yash Saxena          |      04-May-2018
+recognition of weight lifting exercise          |                             |
 
-##Background
+#Background
 Using devices such as Jawbone Up, Nike FuelBand, and Fitbit it is now possible to collect a large amount of data about personal activity 
 relatively inexpensively. These type of devices are part of the quantified self movement - a group of enthusiasts who take measurements 
 about themselves regularly to improve their health, to find patterns in their behavior, or because they are tech geeks. One thing that 
 people regularly do is quantify how much of a particular activity they do, but they rarely quantify how well they do it. In this project,
 our goal is to use data from accelerometers on the belt, forearm, arm, and dumbell of 6 participants.They were asked to perform barbell-lifts
-correctly and incorrectly in 5 different ways. More information is available from the website [here] (http://groupware.les.inf.puc-rio.br/har)
+correctly and incorrectly in 5 different ways. More information is available from the website [here](http://groupware.les.inf.puc-rio.br/har)
 
-##Data
+#Data
 The training data for this project are available [here](https://d396qusza40orc.cloudfront.net/predmachlearn/pml-training.csv)
 The test data are available [here](https://d396qusza40orc.cloudfront.net/predmachlearn/pml-testing.csv)
 The data for this project come from this source: [http://groupware.les.inf.puc-rio.br/har]. 
 
 
-##Submission
+#Submission
 The goal of our project is to predict the manner in which they did the exercise. This is the "classe" variable in the training set.
 I can use any of the other variables to predict with. You should create a report describing how I built this model, how I used 
 cross validation, what I think the expected out of sample error is, and why I made the following choices. I will also use my prediction 
@@ -33,7 +31,7 @@ to the front (Class B) - lifting the dumbbell only halfway (Class C) - lowering 
 to the front (Class E)
 I have tested two models, using decision tree and random forest. Eventually, I will choose the model with the highest accuracy.
 
-##Cross Valisdation
+##Cross Validation
 Cross-validation will be done by subsampling given training data set randomly without replacement into 2 subsamples: 
 TrainTrainingSet data (75% of the original Training data set) and TestTrainingSet data (25%). These models will be fitted on the 
 TrainTrainingSet data set, and tested on the TestTrainingSet data. Once the most accurate model is choosen, it will be tested on 
