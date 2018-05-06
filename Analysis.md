@@ -1,5 +1,5 @@
  __________________________________________________________________________________________________________________________
-|                         ###Title                                      |    ###Author              |       ###Date        |
+|                           #Title                                      |       Author              |          Date        |
 |                                                                       |                           |                      |
 |     Practical machine learning: Qualitative recognition               |     Yash Saxena           |       06-05-2018     |
 |      of weight lifting exercise                                       |                           |                      |
